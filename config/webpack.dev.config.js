@@ -12,14 +12,14 @@ Github: ${pkg.repository.url}`
 
 const config = {
   entry: {
-    'vueTouch': [path.resolve(__dirname, '../src/index.js')]
+    'VueTouch': [path.resolve(__dirname, '../src/index.js')]
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: path.resolve(__dirname, '../dist'),
     filename: 'index.debug.js',
     libraryTarget: 'umd',
-    library: 'vueTouch',
+    library: 'VueTouch',
   },
   plugins: [
     new webpack.BannerPlugin(banner),

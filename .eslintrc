@@ -8,6 +8,7 @@
   "globals": {
     "Tiny": true,
     "window": true,
+    "define": true,
     "DEBUG": true,
     "p2": true
   },

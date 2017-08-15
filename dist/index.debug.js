@@ -2,8 +2,8 @@
  * vue-touch
  * Description:vue touch events
  * Author: 清扬陌客 <qingyangmoke@qq.com>
- * Version: v0.0.1
- * Github: https://github.com/qingyangmoke/vue-touch.git
+ * Version: v0.0.2
+ * Github: https://github.com/qingyangmoke/vue-plugin-touch.git
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -11,9 +11,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["vueTouch"] = factory();
+		exports["VueTouch"] = factory();
 	else
-		root["vueTouch"] = factory();
+		root["VueTouch"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -68,26 +68,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
+	'use strict';
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	var _VueTouch = __webpack_require__(2);
 
-	var _vueTouch = __webpack_require__(2);
-
-	var _vueTouch2 = _interopRequireDefault(_vueTouch);
+	var _VueTouch2 = _interopRequireDefault(_VueTouch);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	if (( false ? "undefined" : _typeof(exports)) == "object") {
-	  module.exports = _vueTouch2.default;
-	} else if (true) {
-	  !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-	    return _vueTouch2.default;
-	  }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else if (typeof window !== 'undefined' && window.Vue) {
-	  window.VueTouch = _vueTouch2.default;
-	  // Vue.use(vueTouch);
-	}
+	module.exports = _VueTouch2.default;
 
 /***/ }),
 /* 2 */
@@ -122,19 +111,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (VueTouch.customEvents.indexOf(event) === -1) throw Error('\u6682\u4E0D\u652F\u6301 v-touch:' + event + ' \u6307\u4EE4');
 	      if (typeof binding.value !== 'function') throw Error('v-touch:' + event + ' \u503C\u5FC5\u987B\u4E3Afunction');
 	      el.addEventListener(event, binding.value);
-	      // console.log(`VueTouch > bind:${event}`, binding.value);
 	    },
 	    update: function update(el, binding) {
 	      var event = binding.arg;
 	      el.removeEventListener(event, binding.oldValue);
 	      el.addEventListener(event, binding.value, false);
-	      // console.log(`VueTouch > update :${event}`);
 	    },
 	    unbind: function unbind(el, binding) {
 	      var event = binding.arg;
 	      el.removeEventListener(event, binding.value);
-	      // console.log(`VueTouch > unbind:${event}`);
-	      // console.log(arguments);
 	    }
 	  });
 	};

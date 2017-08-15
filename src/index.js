@@ -1,13 +1,4 @@
 
-import VueTouch from './vueTouch';
+import VueTouch from './VueTouch';
 
-if (typeof exports == "object") {
-  module.exports = VueTouch;
-} else if (typeof define == "function" && define.amd) {
-  define([], function () {
-    return VueTouch;
-  });
-} else if (typeof window !== 'undefined' && window.Vue) {
-  window.VueTouch = VueTouch;
-  // Vue.use(vueTouch);
-}
+module.exports = VueTouch;
