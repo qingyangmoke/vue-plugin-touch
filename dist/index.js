@@ -1,0 +1,8 @@
+/*!
+ * vue-touch
+ * Description:vue touch events
+ * Author: 清扬陌客 <qingyangmoke@qq.com>
+ * Version: v0.0.1
+ * Github: https://github.com/qingyangmoke/vue-touch.git
+ */
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.vueTouch=e():t.vueTouch=e()}(this,function(){return function(t){function e(n){if(o[n])return o[n].exports;var r=o[n]={exports:{},id:n,loaded:!1};return t[n].call(r.exports,r,r.exports,e),r.loaded=!0,r.exports}var o={};return e.m=t,e.c=o,e.p="/Users/song/Develop/github/vue-touch/dist",e(0)}([function(t,e,o){t.exports=o(1)},function(t,e,o){function n(t){return t&&t.__esModule?t:{default:t}}var r,u,i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},c=o(2),f=n(c);"object"==i(e)?t.exports=f.default:(r=[],u=function(){return f.default}.apply(e,r),!(void 0!==u&&(t.exports=u)))},function(t,e){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o={};o.config={},o.customEvents=["touchstart","touchmove","touchend","touchcancel"],o.install=function(t){arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};t.directive("touch",{isFn:!0,bind:function(t,e){var n=e.arg;if(o.customEvents.indexOf(n)===-1)throw Error("暂不支持 v-touch:"+n+" 指令");if("function"!=typeof e.value)throw Error("v-touch:"+n+" 值必须为function");t.addEventListener(n,e.value)},update:function(t,e){var o=e.arg;t.removeEventListener(o,e.oldValue),t.addEventListener(o,e.value,!1)},unbind:function(t,e){var o=e.arg;t.removeEventListener(o,e.value)}})},e.default=o}])});

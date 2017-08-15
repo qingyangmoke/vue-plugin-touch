@@ -1,0 +1,51 @@
+{
+  "extends": "standard",
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "globals": {
+    "Tiny": true,
+    "window": true,
+    "DEBUG": true,
+    "p2": true
+  },
+  "rules": {
+    "semi": ["error", "always"], //必须使用分号
+    "spaced-comment": 0,  //注释风格要不要有空格什么的
+    "space-before-function-paren": 0,  // function前面的空格没有必要校验
+    "comma-dangle": [1, "always-multiline"],
+
+    // ECMAScript 6
+    "arrow-body-style": [1, "as-needed"],
+    "arrow-parens": 1,
+    "arrow-spacing": [1, { "before": true, "after": true }],
+    "constructor-super": 1,
+    "generator-star-spacing": [1, {"before": true, "after": false}],
+    "no-class-assign": 1,
+    "no-confusing-arrow": [1, { "allowParens": true }],
+    "no-const-assign": 1,
+    "no-dupe-class-members": 1,
+    "no-duplicate-imports": 1,
+    "no-new-symbol": 1,
+    "no-restricted-imports": 0,
+    "no-this-before-super": 1,
+    "no-useless-computed-key": 1,
+    "no-useless-constructor": 1,
+    "no-useless-rename": 1,
+    "no-var": 1,
+    "object-shorthand": 1,
+    "prefer-arrow-callback": 0,
+    "prefer-const": 1,
+    "prefer-reflect": 0,
+    "prefer-rest-params": 0,
+    "prefer-spread": 0,
+    "prefer-template": 1,
+    "require-yield": 1,
+    "rest-spread-spacing": [1, "never"],
+    "sort-imports": 0,
+    "template-curly-spacing": [1, "never"],
+    "yield-star-spacing": [1, "before"]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "vue-touch",
+  "version": "0.0.1",
+  "author": "清扬陌客 <qingyangmoke@qq.com>",
+  "description": "vue touch events",
+  "keywords": [
+    "vue",
+    "plugin",
+    "touch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qingyangmoke/vue-touch.git"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "demo",
+    "dist",
+    "tests"
+  ],
+  "scripts": {
+    "start": "npm run dev",
+    "build": "webpack --progress --colors",
+    "dev": "webpack --progress --colors --watch --config ./config/webpack.dev.config.js",
+    "doc": "rm -rf docs && jsdoc README.md src -r -d docs -t node_modules/docdash",
+    "lint": "eslint src/** tests/**",
+    "test": "mocha ./tests --recursive --require ./tests/setup.js",
+    "test-cov": "istanbul cover _mocha -- ./tests --recursive --require ./tests/setup.js",
+    "ci": "npm run lint && npm run test-cov",
+    "preversion": "npm run ci",
+    "postversion": "git push && git push --tags"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-loader": "^6.3.1",
+    "babel-plugin-static-fs": "^1.1.0",
+    "babel-preset-es2015": "^6.22.0",
+    "eslint": "~3.5.0",
+    "eslint-config-standard": "~6.0.1",
+    "eslint-plugin-promise": "~3.4.0",
+    "eslint-plugin-standard": "~2.0.1",
+    "floss": "^2.0.1",
+    "jsdoc": "~3.4.2",
+    "docdash": "^0.4.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "~0.15.0"
+  },
+  "bugs": {
+    "url": "https://github.com/qingyangmoke/vue-touch/issues"
+  },
+  "homepage": "https://github.com/qingyangmoke/vue-touch#readme",
+  "dependencies": {}
+}
