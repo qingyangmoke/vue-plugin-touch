@@ -26,7 +26,7 @@ Vue.use(vueTouch);
 
 
 ``` html
-<div v-touch:touchstart="onTouchStart" v-touch:touchmove="onTouchMove" v-touch:touchend="onTouchEnd" v-touch:touchcancel="onTouchEnd">Swipe me!</div>
+<div v-touch:touchstart="onTouchStart" v-touch:touchmove="onTouchMove" v-touch:touchend="onTouchEnd" v-touch:touchcancel="onTouchEnd">Touch me!</div>
 ```
 
 ### 支持的事件

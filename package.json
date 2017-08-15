@@ -1,6 +1,6 @@
 {
   "name": "vue-plugin-touch",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": "清扬陌客 <qingyangmoke@qq.com>",
   "description": "vue touch events",
   "keywords": [
