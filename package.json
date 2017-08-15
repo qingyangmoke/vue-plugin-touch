@@ -1,6 +1,6 @@
 {
   "name": "vue-plugin-touch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "清扬陌客 <qingyangmoke@qq.com>",
   "description": "vue touch events",
   "keywords": [
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/qingyangmoke/vue-plugin-touch.git"
   },
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "files": [
     "src",
     "demo",
