@@ -1,5 +1,5 @@
 {
-  "name": "vue-touch",
+  "name": "vue-plugin-touch",
   "version": "0.0.1",
   "author": "清扬陌客 <qingyangmoke@qq.com>",
   "description": "vue touch events",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/qingyangmoke/vue-touch.git"
+    "url": "https://github.com/qingyangmoke/vue-plugin-touch.git"
   },
   "main": "src/index.js",
   "files": [
@@ -49,8 +49,8 @@
     "webpack-merge": "~0.15.0"
   },
   "bugs": {
-    "url": "https://github.com/qingyangmoke/vue-touch/issues"
+    "url": "https://github.com/qingyangmoke/vue-plugin-touch/issues"
   },
-  "homepage": "https://github.com/qingyangmoke/vue-touch#readme",
+  "homepage": "https://github.com/qingyangmoke/vue-plugin-touch#readme",
   "dependencies": {}
 }
