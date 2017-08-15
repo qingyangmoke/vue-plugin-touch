@@ -2,7 +2,7 @@
  * vue-touch
  * Description:vue touch events
  * Author: 清扬陌客 <qingyangmoke@qq.com>
- * Version: v0.0.2
+ * Version: v0.1.1
  * Github: https://github.com/qingyangmoke/vue-plugin-touch.git
  */
 (function webpackUniversalModuleDefinition(root, factory) {

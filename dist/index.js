@@ -2,7 +2,7 @@
  * vue-touch
  * Description:vue touch events
  * Author: 清扬陌客 <qingyangmoke@qq.com>
- * Version: v0.0.2
+ * Version: v0.1.1
  * Github: https://github.com/qingyangmoke/vue-plugin-touch.git
  */
 !function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.VueTouch=t():e.VueTouch=t()}(this,function(){return function(e){function t(n){if(o[n])return o[n].exports;var u=o[n]={exports:{},id:n,loaded:!1};return e[n].call(u.exports,u,u.exports,t),u.loaded=!0,u.exports}var o={};return t.m=e,t.c=o,t.p="/Users/song/Develop/github/vue-touch/dist",t(0)}([function(e,t,o){e.exports=o(1)},function(e,t,o){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}var u=o(2),r=n(u);e.exports=r.default},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var o={};o.config={},o.customEvents=["touchstart","touchmove","touchend","touchcancel"],o.install=function(e){arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};e.directive("touch",{isFn:!0,bind:function(e,t){var n=t.arg;if(o.customEvents.indexOf(n)===-1)throw Error("暂不支持 v-touch:"+n+" 指令");if("function"!=typeof t.value)throw Error("v-touch:"+n+" 值必须为function");e.addEventListener(n,t.value)},update:function(e,t){var o=t.arg;e.removeEventListener(o,t.oldValue),e.addEventListener(o,t.value,!1)},unbind:function(e,t){var o=t.arg;e.removeEventListener(o,t.value)}})},t.default=o}])});
