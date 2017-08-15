@@ -1,6 +1,6 @@
 # vue-plugin-touch
 
-> vue2.0 touch 事件
+> vue2.0 touch 事件 把原生的 touchstart,touchmove,touchend,touchcancel添加到Vue组件中
 
 ## Install
 
@@ -29,9 +29,7 @@ Vue.use(vueTouch);
 <div v-touch:touchstart="onTouchStart" v-touch:touchmove="onTouchMove" v-touch:touchend="onTouchEnd" v-touch:touchcancel="onTouchEnd">Swipe me!</div>
 ```
 
-## API
-
-### Component Events
+### 支持的事件
 
 touchstart、touchmove、touchend、touchcancel
 
