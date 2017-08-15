@@ -20,19 +20,15 @@ VueTouch.install = function (Vue, options = {}) {
       if (VueTouch.customEvents.indexOf(event) === -1) throw Error(`暂不支持 v-touch:${event} 指令`);
       if (typeof binding.value !== 'function') throw Error(`v-touch:${event} 值必须为function`);
       el.addEventListener(event, binding.value);
-      // console.log(`VueTouch > bind:${event}`, binding.value);
     },
     update: function (el, binding) {
       var event = binding.arg;
       el.removeEventListener(event, binding.oldValue);
       el.addEventListener(event, binding.value, false);
-      // console.log(`VueTouch > update :${event}`);
     },
     unbind: function (el, binding) {
       var event = binding.arg;
       el.removeEventListener(event, binding.value);
-      // console.log(`VueTouch > unbind:${event}`);
-      // console.log(arguments);
     }
   });
 };
